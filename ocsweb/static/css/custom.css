@@ -1,0 +1,103 @@
+/***NavBar***/
+body {font-family: 'Playfair Display', serif;}
+
+/**NavBar***/
+.nav-item {
+            letter-spacing:.2em;
+            font-size:14px;
+            text-transform:uppercase;
+           }
+.dropdown-item {
+                letter-spacing:.2em;
+                font-size:14px;
+                text-transform:uppercase;}
+
+/**Footer**/
+
+.my-footer {
+            padding-top:20px;
+            font-size:14px;}
+
+/**Category**/
+.my-row{
+        padding-top:15px}
+
+.my-row .mx-auto{
+                 color:black;
+                 font-size:20px;}
+
+.my-image {
+            width:100%;
+            height:50%;}
+
+.my-image-padding{
+                    padding-top:10px;}
+
+
+
+.my-title{
+         padding-top:10px;
+         text-align:center;
+         font-size:16px;
+         text-transform:uppercase;
+         letter-spacing:.3em;}
+
+.my-bottom-margin{
+                   margin-bottom:10px;}
+
+.card-body h4{
+            font-size:14px;
+            text-transform:uppercase;
+            letter-spacing:.2em;}
+
+/***Products***/
+
+.my-pro-row {
+             padding-top:15px;
+             padding-bottom:20px;}
+
+.my-pro-row .mx-auto {
+                        color:#000;
+                        font-size:12px;
+                        text-decoration:none;}
+
+.my-pro-title {
+                font-size:16px;
+                text-transform:uppercase;
+                letter-spacing:.2em;
+                padding-top:15px;
+                padding-bottom:10px;}
+
+my-pro-text {
+             padding-right:20px;}
+
+/***Search***/
+
+.my-search {
+            padding-top:20px;}
+
+/***Cart***/
+
+.custom-image{
+                width:100px;
+                height:100px;}
+
+.my-table {
+            min-width:400px;
+            font-size:14px;}
+
+.my-t-head{
+            font-weight:normal;
+            text-transform:uppercase;
+            letter-spacing:.2em;
+            background-color:#f8f8fa!important;}
+
+.custom-a{
+            text-decoration:none;}
+
+.custom-icon{
+                text-decoration:none;
+                color:#868e!important;}
+
+.my-custom-btn{
+                margin-top:15px;}

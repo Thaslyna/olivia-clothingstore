@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block metadescription %}
+{{product.description | truncatewords:155}}
+{% endblock %}
+{% block title %}
+{{product.name}}
+{% endblock %}
+{% block content %}
+<div class="row my-pro-row">
+    <div class="mx-auto">
+        <p><a href="{% url 'store:AllStorePro' %}">Home</a> | <a href="{{product.category.get_url}}">{{product.category}}</a> | {{product.name}}</p>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-8 text-center">
+            <div style="min-width:18rem;">
+            <img src="{{product.image.url}}" alt="{{product.name}}">
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+    <div>
+    <h1 class="my-pro-title">{{product.name}}</h1>
+    <h3>$ {{product.price}}</h3>
+    <p class="my-pro-text text-justify">{{product.description}}</p>
+    {% if product.stock <= 0 %}
+    <p class="text-justify my-pro-text"><b>OUT OF STOCK</b></p>
+    {% else %}
+    <a href="{% url 'cart:add_cart' product.id %}"><button class="btn btn-dark">Add To Cart</button></a>
+    {% endif %}
+</div>
+        </div>
+    </div>
+</div>
+{% endblock %}
